@@ -1,21 +1,5 @@
-import json
-x = {
-  "name": "John",
-  "age": 30,
-  "married": True,
-  "divorced": False,
-  "children": ("Ann","Billy"),
-  "pets": None,
-  "cars": [
-    {"model": "BMW 230", "mpg": 27.5},
-    {"model": "Ford Edge", "mpg": 24.1}
-  ]
-}
+from past.builtins import raw_input
 
-# convert into JSON:
-y = json.dumps(x)
+name = raw_input("ENTER your name:")
 
-# the result is a JSON string:
-print(y)
-
-print("hello world i am emon das")
+print(name)
